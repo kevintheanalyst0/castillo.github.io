@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Castillo Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            #wrapper {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #video-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 1;
+                transition: opacity 0.5s ease-out;
+            }
+            
+            /* Agrega este estilo para la superposición semitransparente */
+            #video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de opacidad según tus preferencias */
+                z-index: 1;
+            }
+
+            #intro h1, #intro p {
+            	position: fixed;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate(-50%, -50%);
+            	color: #fff;
+            	opacity: 1;
+            	transition: opacity 0.5s ease-out;
+            	z-index: 2;
+            }
+
+            /* Agrega este estilo adicional para subir el título */
+            #intro h1 {
+            	margin-top: -150px; /* Ajusta este valor según tus necesidades */
+            }
+
+            /* Estilo para las secciones de contacto */
+            .contact-section {
+                flex-basis: 33.33%;
+            }
+			.image-hover {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        	}
+
+       	 	.image-hover img {
+            transition: transform 0.3s ease;
+        	}
+
+        	.image-hover:hover img {
+            transform: scale(0.9); /* Escala la imagen en el hover */
+        	}
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<video autoplay muted loop id="video-background">
+					<source src="video (2160p).mp4" type="video/mp4">
+				</video>
+				<div id="video-overlay"></div> <!-- Agrega la superposición semitransparente -->
+				<h1>Kevin Castillo<br />
+					Portfolio</h1>
+				<p style="margin-top: 50px;">_______________________________________________________</p>
+				<p style="margin-top: 40px;">Data Analyst skilled in SQL, Python, Power BI, and more</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly" >Continue</a></li> <!-- Establece la opacidad en 1 -->
+				</ul>
+			</div>
+			<!-- Header -->
+			<header id="header">
+				<a href="generic.html" class="logo">My proyects</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Projects Details</a></li>
+					
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Featured Post -->
+				<article class="post featured">
+					<header class="major">
+						<h2><a href="generic.html#predictive-kpis">Predictive KPIS<br />Audi Mexico</a></h2>
+						<p>Digitization project of all KPIS of Supply Chain<br /></p>
+					</header>
+					
+					<div class="image-hover" style="display: flex; flex-direction: column; align-items: center;">
+						<img src="images/KPIS.png" alt="KPIS Image" style="width: 100%; height: auto;">
+					</div>
+					
+					<ul class="actions special">
+						<li style="margin-top: 20px;"><a href="generic.html#predictive-kpis" class="button large">View Project</a></li>
+					</ul>
+						
+
+					</ul>
+				</article>
+
+				<!-- Posts -->
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="generic.html#analysis-python">Analysis in Python</a></h2>
+						</header>
+						<a href="generic.html#analysis-python" class="image fit"><img src="images/Python.png" alt="" /></a>
+						<p>Exploración profunda de datos utilizando Python. Desde limpieza de datos hasta visualizaciones impactantes, este proyecto demuestra el poder del análisis con Python para descubrir insights valiosos. Detalles en la sección de proyectos..</p>
+						<ul class="actions special">
+							<li><a href="generic.html#analysis-python" class="button">See Details</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="generic.html#sql-cleaning">SQL Management</a></h2>
+						</header>
+						<a href="generic.html#sql-cleaning" class="image fit"><img src="images/SQL.png" alt="" /></a>
+						<p>Exploración y gestión de datos a través de consultas SQL. Descubriendo patrones, optimizando consultas y dominando la manipulación de datos. Detalles en la sección de proyectos..</p>
+						<ul class="actions special">
+							<li><a href="generic.html#sql-cleaning" class="button">See Details</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="generic.html#factory-costs">Factory Costs Audi México</a></h2>
+						</header>
+						<a href="generic.html#factory-costs" class="image fit"><img src="images/Factory Costs.png" alt="" /></a>
+						<p>Digitalización y visualización de TODOS los costos de Fabricación para la planta armadora de Audi México, ¡un dashboard con más de 50 páginas de detalle!. Detalles en la sección de proyectos.</p>
+						<ul class="actions special">
+							<li><a href="generic.html#factory-costs" class="button">See details</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="generic.html#power-apps">Power Apps</a></h2>
+						</header>
+						<a href="generic.html#power-apps" class="image fit"><img src="images/Power Apps.jpg" alt="" /></a>
+						<p>App creada por medio de Power Apps para dar seguimiento a distintas tareas. Detalles en la sección de proyectos.</p>
+						<ul class="actions special">
+							<li><a href="generic.html#power-apps" class="button">See Details</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<!-- Footer -->
+				<footer>
+					<div class="pagination">
+						<!--<a href="#" class="previous">Prev</a>-->
+						<a href="#" class="page active">1</a>
+						<a href="generic.html" class="page">2</a>
+					</div>
+				</footer>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section class="alt contact-section">
+						<h3>Address</h3>
+						<p><a>Morelia, Mich. México</a></p>
+					</section>
+					<section class="contact-section">
+						<h3>Phone</h3>
+						<p><a>+52 4431692514</a></p>
+					</section>
+					<section class="contact-section">
+						<h3>Email</h3>
+						<p><a>castillok54@gmail.com</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; Ing.Castillo</li><li>Design: <a href="https://html5up.net">Ing.Castillo</a></li></ul>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			// Obtener referencia al video de fondo
+			var video = document.getElementById("video-background");
+			// Obtener referencia al título principal
+			var mainTitle = document.querySelector("#intro h1");
+			// Obtener referencia al subtítulo
+			var subTitle = document.querySelector("#intro p");
+
+			// Detectar el evento de desplazamiento
+			window.addEventListener("scroll", function() {
+				// Obtener la posición actual de desplazamiento
+				var scrollPosition = window.scrollY;
+
+				// Modificar la opacidad del video basado en la posición de desplazamiento
+				video.style.opacity = 1 - scrollPosition / 1000;
+
+				// Modificar la opacidad del título principal basado en la posición de desplazamiento
+				mainTitle.style.opacity = 1 - scrollPosition / 500;
+
+				// Modificar la opacidad del subtítulo basado en la posición de desplazamiento
+				subTitle.style.opacity = 1 - scrollPosition / 500;
+			});
+		</script>
+	</body>
+</html>

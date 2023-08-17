@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Castillo Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            #wrapper {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #video-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 1;
+                transition: opacity 0.5s ease-out;
+            }
+            
+            /* Agrega este estilo para la superposición semitransparente */
+            #video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de opacidad según tus preferencias */
+                z-index: 1;
+            }
+
+            #intro h1, #intro p {
+            	position: fixed;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate(-50%, -50%);
+            	color: #fff;
+            	opacity: 1;
+            	transition: opacity 0.5s ease-out;
+            	z-index: 2;
+            }
+
+            /* Agrega este estilo adicional para subir el título */
+            #intro h1 {
+            	margin-top: -150px; /* Ajusta este valor según tus necesidades */
+            }
+
+            /* Estilo para las secciones de contacto */
+            .contact-section {
+                flex-basis: 33.33%;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<video autoplay muted loop id="video-background">
+					<source src="video (2160p).mp4" type="video/mp4">
+				</video>
+				<div id="video-overlay"></div> <!-- Agrega la superposición semitransparente -->
+				<h1>Kevin Castillo<br />
+					Portfolio</h1>
+				<p style="margin-top: 50px;">_______________________________________________________</p>
+				<p style="margin-top: 40px;">Data Analyst skilled in SQL, Python, Power BI, and more</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly" >Continue</a></li> <!-- Establece la opacidad en 1 -->
+				</ul>
+			</div>
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">My projects</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="generic.html">Projects Details</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- Project Details -->
+				<section class="post">
+					<header class="major">
+						<h1>Projects Details</h1>
+					</header>
+
+					<!-- Project 1: Factory Costs Audi México -->
+					<article class="project" id="factory-costs">
+						<header>
+							<h2>Factory Costs - Audi México</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/Factory Costs.png" alt="Factory Costs - Audi México" /></a>
+						<p>
+							Digitization project of all manufacturing costs of Audi Mexico.
+							Este proyecto tuvo como objetivo el poder tener una herramienta en donde se pudieran visualizar todos los costos de la logística de Audi México, esto porque anteriormente no se tenía una herramienta similar, era muy complicada la toma de decisiones y el recabar toda la información tomaba en ocasiones hasta semanas. Con esta herramienta la gerencia y los directores ejecutivos pueden tomar decisiones de forma rápida y precisa, este dashboard cuenta con 57 páginas distintas, las cuales muestran distintos niveles de detalle según se requiera. Por cuestiones de confidencialidad los datos tuvieron que ser ocultados.
+						</p>
+					</article>
+
+					<!-- Project 2: Analysis in Python -->
+					<article class="project" id="analysis-python">
+						<header>
+							<h2>Analysis in Python</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/Python.png" alt="Analysis in Python" /></a>
+						<p>
+							Análisis en Python.
+							En este proyecto, se llevó a cabo un exhaustivo análisis de datos en la planta armadora de Audi México utilizando la poderosa librería de Python, Pandas. El objetivo principal de este proyecto fue obtener una comprensión profunda de los patrones y tendencias dentro de los datos.
+Pasos Clave del Proyecto:
+
+Exploración y Análisis Descriptivo:
+Utilizando las capacidades de Pandas, se realizó un análisis descriptivo exhaustivo de los datos. Se calcularon estadísticas clave, como promedios, medianas y desviaciones estándar, para comprender la distribución y variabilidad de los datos. Se trazaron gráficos y visualizaciones para identificar patrones, como las tendencias estacionales en las ventas o las preferencias de los clientes en términos de características del vehículo.
+
+Predicciones y Modelos de Tendencias:
+Se implementaron modelos de series temporales utilizando técnicas de Pandas para predecir las tendencias futuras de ventas y demanda de vehículos. Esto proporcionó información valiosa para la planificación de la producción y la gestión del inventario.
+
+Resultados y Beneficios:
+
+El análisis detallado llevado a cabo en este proyecto arrojó una serie de resultados significativos. Se identificaron patrones estacionales en las ventas, lo que permitió a la industria anticipar y prepararse para períodos de alta demanda. 
+El uso de modelos de predicción también permitió una planificación más precisa y eficiente de la producción, evitando la sobreproducción o la escasez de inventario. Esto contribuyó a una gestión más efectiva de los recursos y a una mejora en la rentabilidad general.
+
+Conclusiones:
+
+En resumen, este proyecto de análisis de datos demostró cómo la aplicación de la librería Pandas de Python puede proporcionar una visión profunda y significativa de los datos. Los resultados obtenidos impulsaron decisiones estratégicas informadas, mejoraron la eficiencia operativa y permitieron adaptarse de manera proactiva a las tendencias.
+						</p>
+					</article>
+
+					<!-- Project 3: SQL Cleaning -->
+					<article class="project" id="sql-cleaning">
+						<header>
+							<h2>SQL Management</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/SQL.png" alt="SQL Cleaning" /></a>
+						<p>
+							En este proyecto, se llevó a cabo un análisis integral de datos utilizando el lenguaje de consulta estructurado (SQL). El objetivo principal de este proyecto fue explotar la potencia de SQL para gestionar y analizar grandes volúmenes de datos relacionados con la industria automotriz, con el fin de extraer información valiosa que respalde la toma de decisiones estratégicas en esta industria altamente competitiva.
+
+Pasos Clave del Proyecto:
+
+Integración y Gestión de Datos:
+Se comenzó por la integración y almacenamiento de los datos en una base de datos SQL. Los datos provenían de diversas fuentes, como bases de datos internas. Utilizando SQL, se crearon tablas para representar cada tipo de dato y se establecieron relaciones para mantener la integridad y la coherencia de los datos.
+
+Consultas y Análisis de Datos:
+SQL fue utilizado para realizar consultas complejas que permitieron realizar análisis detallados. Se ejecutaron consultas para extraer información sobre ventas por modelo y año y tendencias de precios a lo largo del tiempo. Estas consultas proporcionaron información valiosa y las áreas de mejora. (Se utilizó una imágen meramente ilustrativa ya que no es posible mostrar las originales por temas de confidencialidad).
+						</p>
+					</article>
+
+					<!-- Project 5: Power Apps -->
+					<article class="project" id="power-apps">
+						<header>
+							<h2>Power Apps</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/Power Apps.jpg" alt="Power - Apps" /></a>
+						<p>
+							Power Apps for tracking tasks.
+							En este proyecto, se abordaron desafíos operativos mediante la creación y aplicación de soluciones personalizadas utilizando Microsoft Power Apps. El objetivo primordial fue mejorar la eficiencia y la colaboración en diversos procesos, mediante el desarrollo de aplicaciones intuitivas y funcionales que abordaran necesidades específicas.
+
+Pasos Clave del Proyecto:
+
+Identificación de Procesos a Mejorar:
+Se realizaron análisis exhaustivos para identificar áreas específicas que requerían optimización. Esto incluyó la identificación de cuellos de botella en la cadena de suministro, la falta de visibilidad en los niveles de inventario y la necesidad de una comunicación más fluida entre los equipos de producción.
+
+Desarrollo de Aplicaciones con Power Apps:
+Utilizando Microsoft Power Apps, se creó una aplicación que aborda los problemas identificados. Esta aplicación incluye herramientas de gestión de inventario y sistemas de comunicación interna para agilizar el flujo de información.
+
+Implementación y Capacitación:
+Una vez que la aplicación estuvo lista, se implementó en algunas áreas de la organización. Se proporcionó capacitación a los empleados para garantizar que comprendieran cómo usar la app de manera efectiva y aprovecharan al máximo sus capacidades. (Se utilizó una imágen meramente ilustrativa ya que no es posible mostrar las originales por temas de confidencialidad).
+
+					</p>
+					</article>
+
+
+					<!-- Project 4: Predictive KPI's Audi México -->
+					<article class="project" id="predictive-kpis">
+						<header>
+							<h2>Predictive KPI's - Audi México</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/KPIS.png" alt="Predictive KPI's - Audi México" /></a>
+						<p>
+							Predictive Key Performance Indicators (KPIs) for Audi Mexico.
+							Dentro de la planta armadora de Audi México, se utilizan distintos indicadores de rendimiento, los cuales son claves para darse cuenta si la operación está marchando de forma correcta o por el contrario está sufriendo algún tipo de contratiempo. Por esto fué necesario realizar primeramente una visualización, la cual permitiera ver de forma rápida y sencilla si algún indicador se encuentra fuera de target o no, una vez realizado esto, se continuó con el siguiente paso, el cual fué ya no solo poder ilustrar los KPIS automáticamente y diariamente, si no también tener la capacidad de preveer el comportamiento de los distintos indicadores a través del tiempo. Para esto, se aplicaron distintos métodos estadísticos dentro de las bases de datos para poder anticiparse a los distintos eventos que son probables en el futuro. Una vez con esta información, se procedió a incluir los distintos pronósticos a las visualizaciones antes establecidas, creando así varios gráficos tan potentes, que se van ajustando automáticamente con el paso del tiempo y que varían dependiendo del comportamiento de los datos. 
+						</p>
+					</article>
+				</section>
+
+				<!-- Footer -->
+				<footer>
+					<div class="pagination">
+						<!--<a href="#" class="previous">Prev</a>-->
+						<a href="index.html" class="page">1</a>
+						<a href="#" class="page active">2</a>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
